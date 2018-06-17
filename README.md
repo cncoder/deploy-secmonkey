@@ -26,8 +26,8 @@ Security Monkey　目前可以运行在　Ubuntu Linux或者OS X，运行环境�
 项目资源
 -----------------
 
-- [Security Monkey 架构](docs/architecture.md)
-- [Quickstart](docs/quickstart.md)
+- [Security Monkey 架构概述](docs/architecture.md)
+- [快速部署](docs/quickstart.md)
 - [User Guide](docs/userguide.md)
 - [Upgrading](docs/update.md)
 - [Changelog](docs/changelog.md)
@@ -38,13 +38,18 @@ Security Monkey　目前可以运行在　Ubuntu Linux或者OS X，运行环境�
 - [PolicyUniverse](https://github.com/Netflix-Skunkworks/policyuniverse)
 - [Troubleshooting](docs/troubleshooting.md)
 
-Instance Diagram
+实例图解
 ---------------
-The components that make up Security Monkey are as follows (not AWS specific):
+Security Monkey的组件如下:
 ![diagram](docs/images/sm_instance_diagram.png)
 
 
-Access Diagram
+权限获取图解
 ------------
-Security Monkey accesses accounts to scan via credentials it is provided ("Role Assumption" where available).
+Security Monkey 通过使用 AWS IAM STS 服务的 Assume Role 提供凭证进行AWS账户扫描
 ![diagram](docs/images/sm_iam_diagram.png)
+
+贡献
+----------
+
+本项目是由Netflix 公司开源的一个安全审计软件，本人只是针对 AWS 审计一部分做了翻译，以及说明一些需要注意的部署要点。如果你想使用Security Monkey 部署在 GCP或者其他地方，请查看源项目。如果您有更好的建议，欢迎随时提issue。如需最新功能请查看[security monkey](https://github.com/Netflix/security_monkey/)项目源站。除非特别声明，本开源项目所有领域内容均只代表所参与贡献的技术人员个人立场，与其公司背景无关。本项目出发点旨在抛砖引玉，有任何不同意见和反馈，请提交 Issue 讨论，或发送邮件至 romennts@gmail.com .

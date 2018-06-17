@@ -1,9 +1,9 @@
-IAM Role Setup on AWS
+在 AWS 中创建 IAM Role
 =====================
 
-We need to create two roles for security monkey. The first role will be an instance profile that we will launch security monkey into. The permissions on this role allow the monkey to use STS to assume to other roles as well as use SES to send email.
+我们需要为security monkey 系统创建两个角色 (IAM  Role)。 第一个角色我们将挂载在一台EC2 实例上。 该角色的权限允许security monkey使用STS Assume Role方式获取本账号或者其他AWS 账号权限，例如获取SES发送电子邮件权限。
 
-Creating the `SecurityMonkeyInstanceProfile` IAM Role
+创建 `SecurityMonkeyInstanceProfile` 角色 (IAM Role)
 -------------------------------------------
 `SecurityMonkeyInstanceProfile` is an IAM role that the Security Monkey instance will operate as. This role
 has a limited set of permissions. The `SecurityMonkey` role (created later) will have the majority of permissions,

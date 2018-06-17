@@ -29,4 +29,4 @@ Security Monkey 可以运行在 [Amazon EC2 (AWS)](iam_aws.md) 实例
 贡献
 ----------
 
-本项目是由Netflix 公司开源的一个安全审计软件，本人只是针对 AWS 一部分做了翻译，以及说明一些注意事项，如果您有更好的建议，欢迎随时提issue。如需最新功能请查看[security monkey](https://github.com/Netflix/security_monkey/) 项目源站。
+本项目是由Netflix 公司开源的一个安全审计软件，本人只是针对 AWS 审计一部分做了翻译，以及说明一些需要注意的部署要点，如果您有更好的建议，欢迎随时提issue。如需最新功能请查看[security monkey](https://github.com/Netflix/security_monkey/) 项目源站。
